@@ -1,11 +1,11 @@
 import express from "express";
-import { serverConfig } from "./congfig/index.js";
+import { serverConfig } from "./config/index.js";
 
 import apiRoutes from "./routes/index.js";
 
 const app = express();
 
-const { ServerConfig ,Logger} = serverConfig;
+const { ServerConfig, Logger } = serverConfig;
 
 app.use("/api", apiRoutes);
 
